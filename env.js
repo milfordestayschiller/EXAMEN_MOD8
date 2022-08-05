@@ -1,0 +1,10 @@
+PORT='8080'
+HOST='localhost'
+HOST_URL='http://localhost:8080'
+
+API_KEY='AIzaSyAvHOy8rLdsEB3sxemLJQz4DEOPnqQlyeM'
+AUTH_DOMAIN='plataforma5-ba567.firebaseapp.com'
+PROJECT_ID='plataforma5-ba567'
+STORAGE_BUCKET='plataforma5-ba567.appspot.com'
+MESSAGING_SENDER_ID='959774173280'
+APP_ID='1:959774173280:web:13a0db5fc587478e70bb05'
