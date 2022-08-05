@@ -1,0 +1,35 @@
+<%- include("template/cabecera3", {tituloWeb: 'Principal' }) %>
+<br>
+<center><div class="container border border-dark">
+    <%puntos= 0 %>
+        <% if (respuesta1 !=="on" ) { puntos+=1 %>
+
+            <% }%>
+                <% if (respuesta2 !=="on" ) { puntos+=1 %>
+
+                    <% }%>
+                        <% if (respuesta3 !=="on" ) { %>
+                            <%puntos+=1 %>
+
+                                <% }%>
+                                    <p>
+                                        Score
+                                        <%= puntos%>
+                                    </p>
+                                    <p>Porcentaje <%let puntaje=(100*puntos)/3%>
+                                            <%= puntaje +"%"%>
+                                    </p>
+                                    <script>
+                                        let puntos = 0;
+                                        if (respuesta1 !== "on") {
+                                            puntos++
+                                        }
+                                        if (respuesta2 !== "on") {
+                                            puntos++
+                                        }
+                                        if (respuesta3 !== "on") {
+                                            puntos++
+                                        }
+                                        const puntaje = (100 * puntos) / 3
+                                    </script>
+</div></center>

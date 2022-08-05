@@ -1,0 +1,33 @@
+<%- include("template/cabeceraPrincipal", {tituloWeb: 'Inicio de Sesión' }) %>
+
+  <center>
+    <div class="container">
+      <br>
+      <p class="h1">Iniciar Sesión</p>
+      <br>
+      <form action="logueando" method="post">
+        <div class="form-outline mb-4">
+          <input type="text" id="form2Example1" name="ingresarNombre" placeholder="Usuario" autofocus
+            class="form-control" />
+        </div>
+        <div class="form-outline mb-4">
+          <input type="password" id="form2Example2" name="ingresarPassword" placeholder="Contraseña"
+            class="form-control" />
+        </div>
+        <div class="row mb-4">
+          <div class="col d-flex justify-content-center">
+            <div class="form-check">
+            </div>
+          </div>
+          <div class="col">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block mb-4">Ingresar</button>
+        <div class="text-center">
+          <p>¿No estás registrado? <a href="/registro">Registrarse aquí</a></p>
+        </div>
+      </form>
+    </div>
+  </center>
+  <br>
+  <%- include("template/footer") %>
